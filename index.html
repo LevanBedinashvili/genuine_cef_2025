@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css?v=1.5.3">
+    <link rel="stylesheet" href="css/speedometer.css?v=1.1.2">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nateli-mtavruli/css/bpg-nateli-mtavruli.min.css">
+</head>
+
+<body>
+    <div id="hood">
+    </div>
+
+    <div id="radial">
+    </div>
+
+    <div id="shop" style="font-family: 'BPG Nateli Mtavruli', sans-serif; position: absolute; left: 15%; top: 1%; display: none;">
+    </div>
+
+    <div class="fuel" id="fuelSadguri">
+    </div>
+
+    <div id="iphone" style="display: none;">
+        <div id="screen">
+            <div id="weather">
+                <div style="display: inline-flex;">
+                    <div>
+                        <p id="weatherText">Tbilisi</p>
+                        <p id="weatherCelsius">15 °C</p>
+                    </div>
+                    <div style="margin-left: 40px;">
+                        <img src="https://i.pinimg.com/originals/06/c4/f7/06c4f70ec5931e2342e703e8a3f0a253.png"
+                            style="width: 80px; height: 80px; border-radius: 20px; margin-top: 10px;" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="screenItems">
+                <div class="app-icon"
+                    style="background-image: url('https://w7.pngwing.com/pngs/271/362/png-transparent-black-and-gray-camera-icon-computer-icons-camera-iphone-graphy-camera-camera-lens-rectangle-mobile-phones.png');">
+                </div>
+                <div class="app-icon"
+                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d5/Contacts_%28iOS%29.png');">
+                </div>
+                <div class="app-icon"
+                    style="background-image: url('https://cdn.iconscout.com/icon/free/png-256/free-apple-phone-icon-download-in-svg-png-gif-file-formats--logo-call-apps-pack-user-interface-icons-493154.png?f=webp&w=256');"
+                    id="call"></div>
+                <div class="app-icon"
+                    style="background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/39/e9/04/39e90453-a936-3843-5a91-2dc82032493e/AppIcon-0-1x_U007ephone-sRGB-85-220.png/512x512bb.jpg');">
+                </div>
+                <div class="app-icon" style="background-image: url('./img/favicon.png');"></div>
+                <div class="app-icon"
+                    style="background-image: url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png');">
+                </div>
+                <div class="app-icon"
+                    style="background-image: url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png');">
+                </div>
+                <div class="app-icon"
+                    style="background-image: url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png');">
+                </div>
+                <div class="app-icon"
+                    style="background-image: url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png');">
+                </div>
+
+                <div id="exitIphone" class="closeButton" style="font-family: 'BPG Nateli Mtavruli', sans-serif">გამორთვა
+                </div>
+            </div>
+        </div>
+
+        <div id="dial-pad" style="display: none;">
+            <div id="dial-display"></div>
+            <div id="dial-buttons">
+                <button class="dial-btn" data-number="1">1</button>
+                <button class="dial-btn" data-number="2">2</button>
+                <button class="dial-btn" data-number="3">3</button>
+                <button class="dial-btn" data-number="4">4</button>
+                <button class="dial-btn" data-number="5">5</button>
+                <button class="dial-btn" data-number="6">6</button>
+                <button class="dial-btn" data-number="7">7</button>
+                <button class="dial-btn" data-number="8">8</button>
+                <button class="dial-btn" data-number="9">9</button>
+                <button class="dial-btn" data-number="*">*</button>
+                <button class="dial-btn" data-number="0">0</button>
+                <button class="dial-btn" id="delete-btn">←</button> <!-- New delete button -->
+                <div id="call-now">დარეკვა</div>
+                <div id="closeCallDial" class="closeButton" style="font-family: 'BPG Nateli Mtavruli', sans-serif">
+                    გამორთვა</div>
+            </div>
+        </div>
+
+        <div id="onCall" style="display: none;">
+            <div id="CallerImage">
+                <img src="https://freesvg.org/img/abstract-user-flat-4.png" style="width: 50px; height: 50px;" alt="">
+            </div>
+            <div
+                style="display: flex; justify-content: center; font-family: 'BPG Nateli Mtavruli', sans-serif; font-size: 20px; margin-top: 20px;">
+                <p>თქვენ ხართ ზარზე...</p>
+            </div>
+
+            <div id="closeCall" class="closeButton"
+                style="font-family: 'BPG Nateli Mtavruli', sans-serif; margin-top: 320px;">გათიშვა</div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/phone.js"></script>
+    <script src="js/data.js?v=1.3.9"></script>
+    <script src="js/date.js"></script>
+</body>
+
+</html>
